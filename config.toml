@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://codeforcontent.com"
 languageCode = "en-us"
 title = "{Code} for Content"
 theme = "hugo-future-imperfect"

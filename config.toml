@@ -1,53 +1,25 @@
 baseurl = ""
-theme = "geo"
-themesdir = "themes"
-relativeURLs = false
-languageCode = "en-us"
 title = "Code { for content }"
-disqusShortname = "shortcode-here"
-paginate = 5
+copyright = "Copyright &copy; 2018 - Richard Ulfvin"
+canonifyurls = true
+theme = "kiera"
 
-[taxonomies]
-	tag = "tags"
-	tutorial = "tutorials"
+paginate = 3
+
+summaryLength = 30
+enableEmoji = true
+pygmentsCodeFences = true
+
+[author]
+    name = "Richard Ulfvin"
+    github = "ulfvins"
+    gitlab = ""
+    linkedin = ""
+    facebook = ""
+    twitter = "ulfvin"
+    instagram = ""
 
 [params]
-	showglobe = true
+    tagline = "A Hugo theme for creative and technical writing"
 
-	favicon = "favicon.ico"
-	
-	analytics = "code-here"
 
-	email = "alexurquhart@gmail.com"
-
-	profilepic = "img/profile.png"
-	
-	title = "CODE { for content }"
-	subtitle = "Code, Cloud and more..."
-
-	# Social buttons for sidebar
-	# Each of these are optional
-	[[params.socialbuttons]]
-	faicon = "github"
-	url = "https://github.com/alexurquhart"
-	[[params.socialbuttons]]
-	faicon = "twitter"
-	url = "https://twitter.com/alexanderurq"
-	[[params.socialbuttons]]
-	faicon = "linkedin"
-	url = "https://linkedin.com"
-	[[params.socialbuttons]]
-	faicon = "google-plus"
-	url = "https://plus.google.com/+YourID"
-
-	[[params.navlinks]]
-	name = "About"
-	url = "about"
-	
-	[[params.navlinks]]
-	name = "Blog"
-	url = ""
-	
-	[[params.navlinks]]
-	name = "Tutorials"
-	url = "tutorial/"

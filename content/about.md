@@ -1,8 +1,20 @@
 +++
-date = "2015-07-28T09:51:51-04:00"
-draft = false
-title = "About Me"
+title = "About Hugo"
+date = "2014-04-09"
+menu = "main"
+weight = "20"
+meta = "false"
 +++
 
-This placeholder page could be your "about me" page, where you detail your contact information,
-portfolio pieces, and describe yourself and your goals.
+Hugo is a static site engine written in Go.
+
+
+It makes use of a variety of open source projects including:
+
+* [Cobra](https://github.com/spf13/cobra)
+* [Viper](https://github.com/spf13/viper)
+* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
+* [Cast](https://github.com/spf13/cast)
+
+Learn more and contribute on [GitHub](https://github.com/gohugoio).
+

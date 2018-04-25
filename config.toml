@@ -1,8 +1,8 @@
-baseURL = "https://miguelsimoni.github.io/hugo-initio-site/"
+baseURL = ""
 languageCode = "en-us"
 title = "Initio - Free, multipurpose html5 template by GetTemplate"
 theme = "hugo-initio"
-publishDir = "docs"
+publishDir = "public"
 
 [params]
     name = "Endpoint Protector"

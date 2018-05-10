@@ -84,3 +84,11 @@ ul.actions.pagination .button {
 .itemized {
 	background: #252a34;
 }
+
+#menu > * {
+    background: #252a34;
+}
+
+#header .main ul li > a:before {
+    color: white;
+}

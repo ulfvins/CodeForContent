@@ -2,15 +2,23 @@
 type = "itemized"
 author = "Richard Ulfvin"
 date = "2017-06-22"
-title = "Application platform in Windows Server 2016"
+title = "Modern application platform in Windows"
 description = "All about windows containsers."
 featured = ""
 featuredpath = ""
 featuredalt = ""
-categories = [""]
 linktitle = ""
 format = "Application"
 link = "#"
 +++
 
-## App 2
+### This presentation on Speakerdeck
+
+<figure style="width:500px" >
+<script async class='speakerdeck-embed' data-id='dd9530afff0e47ec808a97b62826975a' data-ratio='2.0' src='//speakerdeck.com/assets/embed.js'></script>
+    <figcaption>
+	    <small>
+	        This is Caption text.
+	    </small>
+	</figcaption>
+</figure>

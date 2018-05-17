@@ -7,7 +7,6 @@ description = "A practical view on implementing DevOps in the field."
 featured = ""
 featuredpath = ""
 featuredalt = ""
-categories = [""]
 linktitle = ""
 format = "DevOps"
 link = "#"

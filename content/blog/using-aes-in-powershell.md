@@ -16,7 +16,7 @@ AES has proven to be a reliable cipher, and the only practical successful attack
 
 So here goes: How to use AES encryption in PowerShell.
 
-First in AES we need to setup the Cipher key we are going to use. The recommended way would be to use a well suitable randomizer to get a 256-bit key. For this we use the .NET Class **RNGCryptoServiceProvider**. We also need to randomize the Initialization Vector (16 bytes for the Pre-Round transformation). 
+First in AES we need to setup the Cipher key we are going to use. The recommended way would be to use a well suitable randomizer to get a 256-bit key. For this we use the .NET Class *RNGCryptoServiceProvider*. We also need to randomize the Initialization Vector (16 bytes for the Pre-Round transformation). 
 
 {{< highlight powershell >}}
 #NOTE Create a Key and IV:
@@ -29,7 +29,7 @@ $InitializationVector = [System.Byte[]]::new(16) #NOTE: 16 Bytes (128-bit IV)
 $RNG.GetBytes($InitializationVector)
 {{< /highlight >}}
 
-Next, we need to setup the AES Cipher. Here we use the .NET Class **AesCryptoServiceprovider**, and setup the IV and Key we are using for the encryption:
+Next, we need to setup the AES Cipher. Here we use the .NET Class *AesCryptoServiceprovider*, and setup the IV and Key we are using for the encryption:
 
 {{< highlight powershell >}}
 #NOTE: Create a AES Crypto Provider:

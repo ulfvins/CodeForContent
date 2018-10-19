@@ -23,7 +23,7 @@ First in AES we need to setup the Cipher key we are going to use. The recommende
 $RNG = New-Object System.Security.Cryptography.RNGCryptoServiceProvider
 
 $AESEncryptionKey     = [System.Byte[]]::new(32) #NOTE: 32 Bytes (256-bit Key)
-$RNG.GetBytes($AESKey)
+$RNG.GetBytes($AESEncryptionKey)
 
 $InitializationVector = [System.Byte[]]::new(16) #NOTE: 16 Bytes (128-bit IV)
 $RNG.GetBytes($InitializationVector)
@@ -35,7 +35,7 @@ Next, we need to setup the AES Cipher. Here we use the .NET Class *AesCryptoServ
 #NOTE: Create a AES Crypto Provider:
 $AESCipher = New-Object System.Security.Cryptography.AesCryptoServiceProvider
 
-#NOTE: Add the Key and IV to the Chiper
+#NOTE: Add the Key and IV to the Cipher
 $AESCipher.Key        = $AESEncryptionKey
 $AESCipher.IV         = $InitializationVector
 {{< /highlight >}}

@@ -12,11 +12,11 @@ Advanced Encryption Standard (or for short AES, also known as Rijndael) is a pow
 AES uses a transformation schema, where it first using a substitution table, then shifts data rows, then mixes columns to finally do a simple XOR operation on each column using different parts of the encryption key. The longer the key is, the more rounds it need to operate on. So, for a 128-bit key there are 10 rounds, 192-bit key 12 rounds and for 256-bit key 14 rounds.
 AES has proven to be a reliable cipher, and the only practical successful attacks against AES have leveraged side-channel attacks on weaknesses found in the implementation or key management of specific AES-based encryption products.
 
-I am going to be presenting on how to use Key Vault at the MS Event TechDays in Sweden, so I figured that I try to use some crypto classes from .NET in PowerShell (for the sake of IT Pros usage). The demo on stage will be how to use AES in Hybrid Encryption scenario with Key Vault (not this post though).
+>I am going to be presenting on how to use Key Vault at the MS Event TechDays in Sweden, so I figured that I try to use some crypto classes from .NET in PowerShell (for the sake of IT Pros usage). The demo on stage will be how to use AES in Hybrid Encryption scenario with Key Vault (not this post though).
 
 So here goes: How to use AES encryption in PowerShell.
 
-First in AES we need to setup the Cipher key we are going to use. The recommended way would be to use a well suitable randomizer to get a 256-bit key. For this we use the .NET Class RNGCryptoServiceProvider. We also need to randomize the Initialization Vector (16 bytes for the Pre-Round transformation). 
+First in AES we need to setup the Cipher key we are going to use. The recommended way would be to use a well suitable randomizer to get a 256-bit key. For this we use the .NET Class **RNGCryptoServiceProvider**. We also need to randomize the Initialization Vector (16 bytes for the Pre-Round transformation). 
 
 {{< highlight powershell >}}
 #NOTE Create a Key and IV:
@@ -29,7 +29,7 @@ $InitializationVector = [System.Byte[]]::new(16) #NOTE: 16 Bytes (128-bit IV)
 $RNG.GetBytes($InitializationVector)
 {{< /highlight >}}
 
-Next, we need to setup the AES Cipher. Here we use the .NET Class AesCryptoServiceprovider, and setup the IV and Key we are using for the encryption:
+Next, we need to setup the AES Cipher. Here we use the .NET Class **AesCryptoServiceprovider**, and setup the IV and Key we are using for the encryption:
 
 {{< highlight powershell >}}
 #NOTE: Create a AES Crypto Provider:
